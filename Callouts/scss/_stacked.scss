@@ -1,0 +1,45 @@
+$titleColor: $color;
+$titleColorHover: $colorHover;
+$textColor: $color;
+$textColorHover: $colorHover;
+$imgOpacity: 1;
+$imgOpacityHover: .8;
+
+
+.callout-stacked {
+  & .callout-item {
+    position: relative;
+    margin-bottom:30px;
+    & .mpContent img {
+      margin-bottom:10px;
+    }
+  }
+  //hover effects
+  .callout-link {
+    display: block;
+    color:$textColor;
+    & h3, & p, .mpContent > img {
+      @include prefix(transition, all .3s, ms webkit moz);
+    }
+    & h3 {
+      color:$titleColor;
+    }
+    & p {
+      color:$textColor;
+    }
+    & .mpContent > img {
+      opacity:$imgOpacity;
+    }
+    &:hover {
+      & h3 {
+        color:$titleColorHover;
+      }
+      & p {
+        color:$textColorHover;
+      }
+      & .mpContent > img {
+        opacity:$imgOpacityHover;
+      }
+    }
+  }
+}

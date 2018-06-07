@@ -1,0 +1,56 @@
+$sidemenuLinkColor: $sidemenuLinkColor;
+$sidemenuLinkHoverColor: $sidemenuLinkHoverColor;
+$secondLevelBGColor: $secondLevelBGColor;
+
+.side-menu {
+	& ul  {
+	  @extend .ul-basic;
+		text-align:left;
+		& > li {
+		margin-bottom:12px;
+		position:relative;
+		& > a {
+			color:$sidemenuLinkColor;
+			&:hover {
+				color:$sidemenuLinkHoverColor;
+			}
+		}
+		&.selectedItem {
+			& > a {
+				color:$sidemenuLinkHoverColor;
+			}
+		}
+		&.open-panel {
+			color:$sidemenuLinkColor;
+			&.opened .submenu-toggle .caret {
+				border-bottom: 4px solid;
+    		border-right: 4px solid transparent;
+    		border-left: 4px solid transparent;
+				border-top:0;
+			}
+		}
+		& .submenu-toggle {
+			position: absolute;
+			display: block;
+			width: 30px;
+			height: 30px;
+			top: 0px;
+			line-height: 30px;
+			right: 0;
+			text-align: center;
+			cursor: pointer;
+			}
+			& > ul {
+					display:none;
+					background:$secondLevelBGColor;
+					padding:10px 10px 10px 20px;
+					& > li {
+						text-transform: none;
+						letter-spacing: 0;
+						font-size:13px;
+						margin-bottom:4px;
+					}
+				}
+			}
+		}
+	}

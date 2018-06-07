@@ -1,0 +1,57 @@
+$titleColor: $color;
+$titleColorHover: $colorHover;
+$textColor: $color;
+$textColorHover: $colorHover;
+$imgOpacity: .5;
+$imgOpacityHover: 1;
+
+.callout-overlay {
+  & .callout-item {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 230px;
+    & .callout-img,
+    & .callout-txt {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    & .callout-txt {
+      top: 47%;
+    }
+  }
+  //hover effects
+  & .callout-link {
+    display: block;
+    color: $textColor;
+    & .mp-bg > .mpContent,
+    & .promo-item,
+    & h2,
+    & h3 {
+      @include prefix(transition, all 0.3s, ms webkit moz);
+    }
+    & h3 {
+      color: $titleColor;
+    }
+    & p {
+      color: $textColor;
+    }
+    & .mp-bg > .mpContent {
+      opacity: $imgOpacity;
+    }
+    &:hover {
+      & h3 {
+        color: $titleColorHover;
+      }
+      & p {
+        color: $textColorHover;
+      }
+      & .mp-bg > .mpContent {
+        opacity: $imgOpacityHover;
+      }
+    }
+  }
+}

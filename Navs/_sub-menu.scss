@@ -1,0 +1,35 @@
+$submenuLinkColor: $submenuLinkColor;
+$submenuLinkHoverColor: $submenuLinkHoverColor;
+
+.sub-menu {
+	display:none;
+	position: relative;
+	@media screen and (min-width:768px) {
+		display:block;
+	}
+	& ul.ulMenu {
+		@extend .ul-basic;
+		@extend .ul-hz;
+		& > li {
+			margin:0 20px;
+			@media screen and (min-width:768px) {
+				& > ul {
+					display:none;
+				}
+			}
+			&  > a {
+				color:$submenuLinkColor;
+				border-bottom:2px solid transparent;
+				display:block;
+				padding:15px 0;
+				&:hover {
+					color:$submenuLinkHoverColor;
+				}
+			}
+			&.selectedItem > a {
+				color:$submenuLinkHoverColor;
+				border-color:$submenuLinkHoverColor;
+			}
+		}
+	}
+}

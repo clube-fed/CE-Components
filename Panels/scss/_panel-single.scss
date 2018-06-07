@@ -1,0 +1,36 @@
+$panelHeight: 455px;
+$panelBGColor: $panelbgcolor;
+$panelImgOpacity: .6;
+
+.panel-single {
+  & > article {
+    position: relative;
+    height: $panelHeight;
+    background: $panelBGColor;
+  }
+  & .panel-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    &.mp-bg > .mpContent {
+      opacity: $panelImgOpacity;
+    }
+  }
+  & .panel-txt {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    width: 80%;
+    text-align: center;
+    z-index: 2;
+    }
+    & .abut {
+      @extend %overlay_abut;
+    }
+  }
+}

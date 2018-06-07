@@ -1,0 +1,16 @@
+[class*="-cte"] {
+  border:1px solid $silver;
+  padding:10px;
+  text-align: center;
+  margin:10px auto;
+  width:calc(100% - 10px);
+  max-width:400px;
+  & .clickToEditDiv img {
+    max-width: 100%;
+  }
+  &.cte-0,
+  &.cte-1,
+  &.cte--1 {
+    display:none;
+  }
+}
