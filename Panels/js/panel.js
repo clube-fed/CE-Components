@@ -1,4 +1,4 @@
-if($j('.panel-single')).length) {
+if($j('.panel-single').length) {
   $j('.panel-item').each(function(){
     cteBuild(this);
   });

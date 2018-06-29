@@ -31,6 +31,4 @@ if($j('.callouts').length) {
     calloutLinkWrap(this,'callout');
     cteBuild(this); //cteBuild always called last
     });
-} else {
-  return
 }
