@@ -1,0 +1,17 @@
+@mixin aspectRatio($x-width, $y-width) {
+  padding-bottom:($y-width/$x-width) + px;
+}
+
+.media-iframe {
+    position: relative;
+    @include aspectRatio(1600/900); //update this with width and height of video to get aspect ratio
+    margin:30px auto;
+    height: 0;
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+}

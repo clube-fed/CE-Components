@@ -1,0 +1,11 @@
+//this code is adapted to remove 100% width on larger devices
+
+//will need to make sure content loading is using global CE button class
+.abut,
+.btn-primary,
+.btn.primary {
+  width: 100%;
+  @media screen and (min-width:768px) {
+    width: auto;
+  }
+}
