@@ -9,6 +9,15 @@
     border:0;
     margin:0;
     max-width: none;
+    &.col-xs-3 {
+      width:25%;
+    }
+    &.col-xs-4 {
+      width:33.33333333%;
+    }
+    &.col-xs-6 {
+      width:50%;
+    }
   }
   & .clickToEditDiv img {
     max-width: 100%;
