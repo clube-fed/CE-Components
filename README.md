@@ -1,7 +1,7 @@
 # CE-Components
 This repository contains HTML, SCSS and JS associated with primary components used for Clubessential Websites.
 
-## base
+## Base
 This folder contains the base scss partial to serve as a global starting point for Axis implementations as well as classes for custom private home layouts.
 
 ## Quicklinks
