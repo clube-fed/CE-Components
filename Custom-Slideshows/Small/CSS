@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.slick-slider {
+.slideshow .slick-slider {
   margin-right: -.5rem;
   margin-left: -.5rem;
   
@@ -19,31 +19,31 @@
  
 }
 
-.slick-track .carouselRowDIV:first-child .img-box {
+.slideshow .slick-track .carouselRowDIV:first-child .img-box {
   margin-left: 0;
   
 }
 
-.slick-track .carouselRowDIV:last-child .img-box {
+.slideshow .slick-track .carouselRowDIV:last-child .img-box {
   margin-right: 0;
   
 }
 
-.slick-slide {
+.slideshow .slick-slide {
   margin: 0 .5rem 0 .5rem;
   
 }
 
-.slick-current .img-box .photo-overlay {
+.slideshow .slick-current .img-box .photo-overlay {
   opacity: 0;
   
 }
 
-.slick-prev, .slick-next {
+.slideshow .slick-prev, .slideshow .slick-next {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-40%);
-  transform: translateY(-40%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   background: 0;
   border: 0;
   background: #fff;
@@ -53,17 +53,17 @@
   
 }
 
-.slick-prev {
+.slideshow .slick-prev {
   left: 5px;
   
 }
 
-.slick-next {
+.slideshow .slick-next {
   right: 5px;
   
 }
 
-.slick-prev:before {
+.slideshow .slick-prev:before {
   display: inline-block;
   font-family: 'Nucleo Outline';
   color: #888888a6;
@@ -71,7 +71,7 @@
   font-size: 1.5rem;
 }
 
-.slick-next:before {
+.slideshow .slick-next:before {
   display: inline-block;
   font-family: 'Nucleo Outline';
   color: #888888a6;
