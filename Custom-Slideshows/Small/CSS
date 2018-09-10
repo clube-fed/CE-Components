@@ -12,7 +12,6 @@
 }
 
 .img-box {
-  
   height: 420px;
   background-size: cover;
   position: relative;
