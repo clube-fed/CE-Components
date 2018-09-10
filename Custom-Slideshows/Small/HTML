@@ -1,1 +1,18 @@
 
+<section class="slideshow">
+
+
+</section>
+
+// Photo Album Layout Settings:
+
+//Plugin HTML Layout (Images): 
+
+##THUMBSTABLE##
+
+// HTML Template (Thumbnails):
+
+<div class="img-box" style="background-image:url(##IMAGEPATH##);">
+<div class="photo-overlay"></div>
+</div>
+
