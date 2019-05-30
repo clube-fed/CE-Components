@@ -1,0 +1,304 @@
+/* ---------------------------
+MEMBER LOGIN PAGE
+--------------------------- */	
+
+.theActualLoginPage .outerMasterPageWrap,
+.theActualLoginPage .outerMasterPageWrap > ,
+.theActualLoginPage .outerMasterPageWrap >  > div:nth-of-type(2),
+.theActualLoginPage .outerMasterPageWrap >  > div:nth-of-type(2) > div,
+.theActualLoginPage .outerMasterPageWrap >  > div:nth-of-type(2) > div > div[id$="_dpPlaceholder"]{
+height: 100%;
+}
+
+.login-bg-src-wrap {
+	width: 90px;
+	height: 22px;
+	position: fixed;
+	left: calc(100% - 100px);
+    bottom: 100px;
+}
+
+.login-page {
+	width: 100%;
+	height: 100%;
+	display: table;
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.login-page-blackout {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.login-page-blackout:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0);
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 0;
+}
+
+.login-logo {
+	width: 99px;
+    height: 156px;
+	background: url(../../../Images/logo_login.png) no-repeat left top;
+	display: block;
+	text-indent: -9999px;
+	margin: 0px auto 50px;
+	background-size: cover;
+}
+
+a.login-logo:focus {
+	outline: none;
+}
+
+.login-page-wrap {
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.login-page-box {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0px 2px 15px 0px rgba(26, 27, 28, 0.15);
+}
+
+.login-page-border{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+ 
+.errLogin {
+	font-size: 16px !important;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+	
+.login-wrap {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.login-page-wrap .login-wrap {
+   width: 100%;
+	max-width: 370px;
+}
+
+.login-page-wrap .login-wrap h2 {
+	margin-top: 10px;
+	margin-bottom: 8px;
+}
+
+.login-page-wrap .login-wrap > p:first-of-type {
+	margin-bottom: 32px;
+}
+
+.user-log .login-page-wrap .login-wrap > p {
+	display: none;
+}
+
+.login-wrap table {
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 260px;
+    text-align: center;
+    color: $darkGrey !important;
+}
+
+.login-wrap table a {
+	 color: $darkGrey !important;
+}
+
+.login-wrap table a:hover {
+	text-decoration: underline;
+	color: $primaryLight !important;
+}
+
+.login-wrap div[id*="wrapLogin"] {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
+.login-wrap .advLogUsername,
+.login-wrap .advLogPassword {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    color: $normGrey;
+    font: 300 16px/60px $font1;
+    height: 60px;
+    padding: 0;
+    text-align: left;
+    text-indent: 12px;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.login-wrap .advLogUsername:focus,
+.login-wrap .advLogPassword:focus {
+	border: 1px solid #e7e7e7;
+    color: #222;
+    background: #f5f5f5;
+}
+
+.login-wrap .clearfix {
+    padding: 15px 0 0;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+}
+
+.login-bot-l span.advLogRemoveChk:focus {
+	outline: 1px solid $darkGrey;
+}
+
+.login-bot-l {
+	color: $normGrey;
+	float: left;
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+	height: 22px;
+	margin-top: 0;
+}
+
+.login-bot-l label {
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.login-bot-l a,
+.login-bot-r a,
+.login-wrap a.goBackLink {
+	color:   $normGrey;
+	font-size: 14px;
+	text-decoration:underline;
+	vertical-align: top;
+	font-weight: 300;
+}
+
+.login-bot-l a:hover,
+.login-bot-r a:hover,
+.login-wrap a.goBackLink:hover {
+    color: $primaryLight;
+    text-decoration: none;
+}
+
+.login-bot-r {
+	color: $normGrey;
+	float: right;
+	font-size: 14px;
+	text-align: left;
+	line-height: 22px;
+	margin-top: 3px;
+	font-weight: 300;
+}
+
+.login-page .abut,
+.login-page .abut:hover,
+.login-page .abut:focus{
+    display: block;
+    margin: 0 auto 0 !important;
+    width: 100% !important;
+	letter-spacing: 1.9px;
+	padding: 20px 22px 21px !important;
+
+}
+
+.login-page .abut:hover {
+	color: #fff !important;
+}
+
+.login-bot-l input[type="checkbox"] {
+    display: none;
+}
+
+.login-bot-l input[type="checkbox"] + label::before {
+   background-color: $normGrey;
+   border: 2px solid $normGrey;
+   border-radius: 50%;
+   content: "";
+   display: inline-block;
+   height: 18px;
+   margin-right: 4px;
+   vertical-align: bottom;
+   width: 18px;
+}
+
+.login-bot-l input[type="checkbox"]:checked + label::before {
+    color: #fff;
+    content: "\2714";
+	font-size: 9px;
+    line-height: 14px;
+    text-align: center;
+	background:$normGrey;
+	border-color:$normGrey;
+}
+
+@media (max-width: 600px) { 
+	
+	.login-page-border {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.login-logo {
+    width: 44px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background-position: 0 0;
+	}
+	
+	.login-page-wrap .login-wrap>p:first-of-type {
+    margin-bottom: 18px;
+	}
+	.login-page-wrap .login-wrap h2 {
+		font-size: 20px;
+		margin: 5px auto;
+	}
+}
+
+@media (min-width: 600px) { 
+	.login-page-wrap {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+@media (max-width: 768px) { 
+	.login-wrap div[id*="wrapLogin"] {
+		max-width: 90%;
+	}
+}
+
+@media (min-width: 1024px) { 
+	
+	.login-page-box {
+		box-shadow:  none;
+	}
+	
+	.login-page {
+		height: 100%;
+		display: table;
+		width: 100%;
+		max-width: 600px;
+	}
+}
